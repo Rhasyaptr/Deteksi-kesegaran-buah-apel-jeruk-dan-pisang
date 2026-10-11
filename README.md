@@ -24,13 +24,12 @@ Saat kamera tidak menampilkan buah, tidak ada objek yang terdeteksi (ditangani d
 ├── best.pt              # Model hasil training
 ├── data.yaml            # Konfigurasi dataset
 ├── requirements.txt     # Daftar library
-├── hasil/               # Confusion matrix, grafik training, screenshot deteksi
 └── README.md
 ```
 
 ## Teknologi
 
-- Python [versi, misal 3.10]
+- Python 3.9
 - YOLOv8 (Ultralytics)
 - OpenCV
 - PyTorch
@@ -40,13 +39,13 @@ Saat kamera tidak menampilkan buah, tidak ada objek yang terdeteksi (ditangani d
 
 ## Dataset
 
-- Dibuat sendiri, dianotasi di Roboflow: (https://universe.roboflow.com/mamadz-_/kesegaran-buah-rfz4n)
-- Total gambar: [69 / angka terbaru]
+- Dibuat sendiri, dianotasi di Roboflow: https://universe.roboflow.com/mamadz-_/kesegaran-buah-rfz4
+- Total gambar: 69
 - Sumber: foto dan frame video dengan kamera iPhone
-- Gambar negatif (tanpa buah): [jumlah]
+- Gambar negatif (tanpa buah): 2
 - Augmentasi: rotasi, flip, variasi brightness/saturasi, mosaic, mixup
 
-**Keterbatasan:** dataset dibuat dari jumlah buah yang terbatas (satu buah per kondisi), sehingga model dapat kurang akurat pada buah lain yang bentuk atau warnanya berbeda. Karena data sedikit, seluruh gambar dipakai untuk training dan validasi memakai data yang sama, sehingga angka mAP **bukan** akurasi sebenarnya. Kinerja sebenarnya dinilai dari pengujian langsung dengan kamera.
+**Keterbatasan:** dataset dibuat dari jumlah buah yang terbatas (satu/dua buah per kondisi), sehingga model dapat kurang akurat pada buah lain yang bentuk atau warnanya berbeda. Karena data sedikit, seluruh gambar dipakai untuk training dan validasi memakai data yang sama, sehingga angka mAP **bukan** akurasi sebenarnya. Kinerja sebenarnya dinilai dari pengujian langsung dengan kamera.
 
 ## Instalasi
 
@@ -89,18 +88,6 @@ Tombol: `q` untuk keluar, `s` untuk menyimpan screenshot.
 
 Warna kotak: **hijau** = segar, **merah** = busuk.
 
-## Hasil
-
-| Metrik | Nilai |
-|--------|-------|
-| Precision | [isi] |
-| Recall | [isi] |
-| mAP50 | [isi] |
-
-![Confusion Matrix](hasil/confusion_matrix.png)
-![Contoh Deteksi](hasil/contoh_deteksi.png)
-
-Catatan pengujian langsung: [misal, "apel segar terdeteksi benar pada X dari Y percobaan"].
 
 ## Pengembangan Selanjutnya
 
@@ -110,6 +97,5 @@ Catatan pengujian langsung: [misal, "apel segar terdeteksi benar pada X dari Y p
 
 ## Pembuat
 
-[Nama lengkap] ([NIM])
-[Program Studi, Universitas]
-Dosen Pengampu: [Nama dosen]
+Muhammad Rhasya Ekasaputra
+Program Studi Teknik Elektro, Universitas Negeri Semarang
