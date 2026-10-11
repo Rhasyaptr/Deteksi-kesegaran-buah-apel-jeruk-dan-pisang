@@ -50,8 +50,8 @@ Saat kamera tidak menampilkan buah, tidak ada objek yang terdeteksi (ditangani d
 ## Instalasi
 
 ```bash
-git clone https://github.com/[username]/[nama-repo].git
-cd [nama-repo]
+git clone https://github.com/Rhasyaptr/Deteksi-kesegaran-buah-apel-jeruk-dan-pisang.git
+cd Rhasyaptr
 pip install -r requirements.txt
 ```
 
