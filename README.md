@@ -39,7 +39,7 @@ Saat kamera tidak menampilkan buah, tidak ada objek yang terdeteksi (ditangani d
 
 ## Dataset
 
-- Dibuat sendiri, dianotasi di Roboflow: https://universe.roboflow.com/mamadz-_/kesegaran-buah-rfz4
+- Dibuat sendiri, dianotasi di Roboflow: (https://app.roboflow.com/mamadz-_/kesegaran-buah-rfz4n/3)
 - Total gambar: 69
 - Sumber: foto dan frame video dengan kamera iPhone
 - Gambar negatif (tanpa buah): 2
