@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 6
+names: ['Apel Busuk', 'Apel Segar', 'Jeruk Busuk', 'Jeruk Segar', 'Pisang Busuk', 'Pisang Segar']
+
+roboflow:
+  workspace: mamadz-_
+  project: kesegaran-buah-rfz4n
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/mamadz-_/kesegaran-buah-rfz4n/dataset/3
